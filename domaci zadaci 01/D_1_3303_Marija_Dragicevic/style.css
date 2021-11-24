@@ -1,0 +1,177 @@
+
+/* DEAFULT STYLES */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Caveat', cursive;
+    color: orangered;
+}
+body{
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #eee;
+    color:#444;
+}
+
+
+/* NAV SECTION */
+
+nav{
+    background-color: #444;
+}
+
+nav .container ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav .container ul li a{
+   color: orangered;
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+nav .container ul li a:hover{
+    color: #eee;
+    transition: 0.7 ease;
+    cursor: pointer;
+}
+
+/* HEADER SECTION */
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/frontpage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 6rem;
+    color: #eee;
+}
+header h3{
+    font-size: 2rem;
+    color: #eee;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    background-color: rgba(216, 213, 213, 0.699);
+    padding: 50px 0px;
+}
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about article{
+    flex: 0 0 40%;
+}
+
+
+
+.about article img{
+    width: 100%;
+    height: auto;
+    border: 7px solid orangered;
+    border-radius: 35px;
+}
+
+.about article img:hover{
+    border: 7px solid rgb(233,204,39);
+    opacity: 90%;
+    transition-duration: 1s;
+}
+
+
+.about h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-style: italic;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    background-color: #444;
+    color: #eee;
+}
+
+footer hr {
+    background-color: orangered;
+    height: 3px;
+    border:none;
+}
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3{
+    font-size: 3rem;
+}
+footer article{
+    padding:30px 0px;
+}
+
+footer article ol{
+    list-style-type: none;
+}
+
+footer article ol li{
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+footer article ol li span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: orangered;
+  
+
+}
+
+footer p{
+    text-align: center;
+    padding: 20px;
+
+}

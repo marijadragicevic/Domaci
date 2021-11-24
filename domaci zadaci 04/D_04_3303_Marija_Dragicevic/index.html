@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/337d7d2383.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <h2>Responsive Forme</h2>
+        <br>
+        <p>
+            Promenite sirinu prozora kako biste videli ekekat forme.
+            Kada je ekran manji od 600px, forme kreirati tako da se njeni elementi nalaze jedni ispod drugih.
+        </p>
+    </div>
+
+    <form>
+
+        <div class="row">
+            <label for="ime" class="col-s-12">Ime i prezime</label>
+            <input class="col-s-12" type="text" id="ime" name="ime" placeholder="Unesite svoje ime i prezime...">
+        </div>
+
+        <div class="row">
+            <label for="search" class="col-s-12">Pretražite</label>
+            <input type="search" class="col-s-6" name="search" id="search" placeholder="Pretražite...">
+            <span class="col-s-6"></span>
+        </div>
+
+        <div class="row">
+            <label for="zemlja" class="col-s-12">Zemlja</label>
+            <select name="" id="zemlja" class="col-s-12">
+                <option value="italija">Italija</option>
+                <option value="srbija" selected>Srbija</option>
+                <option value="danska">Danska</option>
+                <option value="holandija">Holandija</option>
+                <option value="rusija">Rusija</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="opis" class="opis col-s-12">Opis</label>
+            <textarea name="Napisati neki opis..." id="opis" class="col-s-12" cols="30" rows="10"
+                placeholder="Napisati neki opis..."></textarea>
+        </div>
+
+        <div class="button" class="row">
+            <button type="button" class="col-s-12">Potvrdite</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
