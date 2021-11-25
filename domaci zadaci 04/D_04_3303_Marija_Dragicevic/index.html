@@ -14,10 +14,11 @@
 
 <body>
 
-    <div class="row">
-        <h2>Responsive Forme</h2>
-        <br>
-        <p>
+    <header class="row">
+        <h2 class="col-12">Responsive Forme</h2>
+    </header>
+    <div class="row div1">
+        <p class="col-12">
             Promenite sirinu prozora kako biste videli ekekat forme.
             Kada je ekran manji od 600px, forme kreirati tako da se njeni elementi nalaze jedni ispod drugih.
         </p>
@@ -26,19 +27,18 @@
     <form>
 
         <div class="row">
-            <label for="ime" class="col-s-12">Ime i prezime</label>
-            <input class="col-s-12" type="text" id="ime" name="ime" placeholder="Unesite svoje ime i prezime...">
+            <label for="ime" class="col-4">Ime i prezime</label>
+            <input type="text" class="col-8" id="ime" name="ime" placeholder="Unesite svoje ime i prezime...">
         </div>
 
         <div class="row">
-            <label for="search" class="col-s-12">Pretražite</label>
-            <input type="search" class="col-s-6" name="search" id="search" placeholder="Pretražite...">
-            <span class="col-s-6"></span>
+            <label for="search" class="col-4">Pretražite</label>
+            <input type="search" class="col-8" name="search" id="search" placeholder="Pretražite...">
         </div>
 
         <div class="row">
-            <label for="zemlja" class="col-s-12">Zemlja</label>
-            <select name="" id="zemlja" class="col-s-12">
+            <label for="zemlja" class="col-4">Zemlja</label>
+            <select name="" class="col-8" id="zemlja">
                 <option value="italija">Italija</option>
                 <option value="srbija" selected>Srbija</option>
                 <option value="danska">Danska</option>
@@ -48,13 +48,14 @@
         </div>
 
         <div class="row">
-            <label for="opis" class="opis col-s-12">Opis</label>
-            <textarea name="Napisati neki opis..." id="opis" class="col-s-12" cols="30" rows="10"
+            <label for="opis" class="col-4">Opis</label>
+            <textarea class="col-8" name="Napisati neki opis..." id="opis" cols="30" rows="10"
                 placeholder="Napisati neki opis..."></textarea>
         </div>
 
         <div class="button" class="row">
-            <button type="button" class="col-s-12">Potvrdite</button>
+            <div class="col-10">&nbsp;</div>
+            <button type="button" class="col-2">Potvrdite</button>
         </div>
 
     </form>
