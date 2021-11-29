@@ -8,7 +8,7 @@
     font-size: 21px;
     font-family: "Nunito";
 }
-
+input#search {   height: 40px;   background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);   background-repeat: no-repeat;   background-position: left center;   padding-left: 40px;   box-shadow: none;   -webkit-appearance: none; }
 .row{
     overflow: hidden;
     width: 100%;
