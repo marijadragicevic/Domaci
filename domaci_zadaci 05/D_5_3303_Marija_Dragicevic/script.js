@@ -1,7 +1,8 @@
 // 1.zadatak
 let p = 1500;
 let m = 2000;
-let cena = 1200;
+let k = 800;
+let cena = (p + m - k) / 2;
 console.log(`Pera je dobio kusur u iznosu od ${p - cena} dinara.`);
 console.log(`Mika je dobio kusur u iznosu od ${m - cena} dinara.`);
 
