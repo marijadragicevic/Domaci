@@ -96,20 +96,42 @@ else {
 
 let pocSatLek1 = 10;
 let pocMinLek1 = 30;
-let krajSatLek1 = 16;
-let krajMinLek1 = 45;
+let krajSatLek1 = 14;
+let krajMinLek1 = 30;
 let pocLek1 = pocSatLek1 + ":" + pocMinLek1;
 let krajLek1 = krajSatLek1 + ":" + krajMinLek1;
 console.log(`Pocetak radnog vremena prvog lekara je ${pocLek1}, a kraj radnog vremena je ${krajLek1}`);
 
+let k1 = krajSatLek1 * 60 + krajMinLek1;
+let p1 = pocSatLek1 * 60 + pocMinLek1;
+
 let pocSatLek2 = 8;
 let pocMinLek2 = 15;
-let krajSatLek2 = 15;
-let krajMinLek2 = 30;
+let krajSatLek2 = 14;
+let krajMinLek2 = 40;
 let pocLek2 = pocSatLek2 + ":" + pocMinLek2;
 let krajLek2 = krajSatLek2 + ":" + krajMinLek2;
 console.log(`Pocetak radnog vremena drugog lekara je ${pocLek2}, a kraj radnog vremena je ${krajLek2}`);
 
+let p2 = pocSatLek2 * 60 + pocMinLek2;
+let k2 = krajSatLek2 * 60 + krajMinLek2;
+
+
+if (p1 < p2 && p2 < k1 && k1 < k2) {
+    console.log(`Smene se preklapaju za ${Math.floor((k1 - p2) / 60)}h i ${(k1 - p2) % 60}min`);
+}
+else if (p2 < p1 && p1 < k2 && k2 < k1) {
+    console.log(`Smene se preklapaju za ${Math.floor((k2 - p1) / 60)}h i ${(k2 - p1) % 60}min`);
+}
+else if (p1 < p2 && k2 < k1) {
+    console.log(`Smene se preklapaju za ${Math.floor((k2 - p2) / 60)}h i ${(k2 - p2) % 60}min`);
+}
+else if (p2 < p1 && k1 < k2) {
+    console.log(`Smene se preklapaju za ${Math.floor((k1 - p1) / 60)}h i ${(k1 - p1) % 60}min`);
+}
+else {
+    console.log(`Smene se ne preklapaju`);
+}
 
 // 8. Za uneta dva broja i karakter napraviti kalkulator koji vrsi mnozenje ta dva broja ukoliko je uneto slovo "m", deljenje ukoliko je unesto slovo "d", sabiranje ukoliko je uneto slovo "s" ili oduzimanje ukoliko je uneto slovo "o".
 
