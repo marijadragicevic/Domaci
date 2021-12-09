@@ -37,7 +37,7 @@ m = 100;
 p = 1;
 for (i = n; i <= m; i++) {
     if (i % 11 == 0) {
-        p *= i
+        p *= i;
     }
 }
 document.body.innerHTML += `<p>Proizvod svih brojeva deljivih sa 11 u intervalu od ${n} do ${m} je ${p}</p>`;
@@ -91,7 +91,7 @@ let z = 90;
 red = " ";
 for (i = 1; i <= z; i++) {
     if (z % i == 0 && i % 3 == 0 && i % 2 == 1) {
-        red = red + i + ",";
+        red = red + i + " , ";
     }
 }
 
@@ -111,18 +111,14 @@ document.body.innerHTML += `<p>Zbir cifara broja ${n} je ${zbir}</p>`
 // 18. Koristeci for petlju kreirati neuredjenu listu sa ugnjezdenim elementima ,kao sto je prikazano na slici
 
 let lista = "<ul>";
-i = 0;
-for (red = 1; red <= 10; red++) {
-    if (red % 3 == 1) {
-        i++;
+for (i = 1; i <= 10; i++) {
+    if (i % 3 == 1) {
         lista += `<li>Element ${i}</li>`;
     }
-    else if (red % 3 == 2) {
-        i++;
+    else if (i % 3 == 2) {
         lista += `<li>Element ${i}</li>`;
     }
     else {
-        i++;
         lista +=
             `<ul style="color:purple;">
         <li>Element ${i} </li>
@@ -138,12 +134,12 @@ document.body.innerHTML += lista;
 let div = "<div>";
 i = 1;
 
-for (let span = 1; span <= 8; span++) {
-    if (span % 2 == 0) {
+for (let p = 1; p <= 8; p++) {
+    if (p % 2 == 0) {
         div +=
             `<p><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span></p>`;
     }
-    else if (span % 2 != 0) {
+    else {
         div +=
             `<p><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span><span>${i++}</span></p>`;
     }
@@ -152,3 +148,5 @@ for (let span = 1; span <= 8; span++) {
 
 div += `</div>`;
 document.body.innerHTML += div;
+
+
