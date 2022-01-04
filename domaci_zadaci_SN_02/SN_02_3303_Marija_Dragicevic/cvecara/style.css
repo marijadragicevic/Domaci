@@ -91,29 +91,101 @@ header .container hgroup p{
 
 /* ABOUT SECTION */
 
-.about{
-    background-color: #eee;
-}
+
 .about .container {
     padding: 30px 0px;
     color: #333;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about .container .row img{
+    height: 40vh;
+    padding: 15px 0px;
 }
 .about .container hgroup h3 {
     font-size: 2.2rem;
     text-align: center;
+    font-weight: 500;
 }
+
 .about .container hgroup p {
     font-size: 1.3rem;
     padding: 15px 0;
+    font-weight: 400;
 }
-.about .container .row {
+
+
+/* SERVICES SECTION */
+.services{
+    background-color: #eee;
+    margin: 20px 0px;
+}
+
+.services .container{
+    padding: 30px 0px;
+}
+.services .container {
+    padding: 30px 0px;
+    color: #333;
+}
+.services .container hgroup h3 {
+    font-size: 2.2rem;
+    text-align: left;
+    font-weight: 500;
+}
+.services .container hgroup p {
+    font-size: 1.3rem;
+    padding: 15px 0;
+}
+.services .container .row {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.about .container .row img {
-    width: 30%;
-    padding: 10px 0px;
-    height: 50vh;
+.services .container .row article{
+    padding: 15px;
+    background-color:white;
+    border-radius: 5px;
+    text-align: center;
+    color: #444;
+    font-weight: 500;
 }
+.services .container .row article:hover{
+   box-shadow: 5px 5px 10px #444;
+}
+.services .container .row article h4{
+    border: none;
+    border-radius: 3px;
+    background-color:rgb(247, 199, 111);
+    color:white;
+    padding: 5px 13px;
+    font-size: 1.3rem;
+}
+.services .container .row article p{
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+.services .container .row article img{
+    height: 30vh;
+    padding: 10px 5px;
+}
+.services .container .row article button{
+    border: none;
+    border-radius: 3px;
+    background-color:rgb(243, 189, 88);
+    color:white;
+    padding: 5px 13px;
+    font-size: 1.2rem;
+}
+.services .container .row article button:hover{
+    background-color:rgb(183, 247, 110);
+
+}
+

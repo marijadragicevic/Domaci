@@ -1,3 +1,5 @@
+
+///// DOMACI/////////////
 let ispisDiv = document.querySelector(".ispis");
 let btnIzracunaj = document.querySelector("input[type='submit']");
 
@@ -48,11 +50,11 @@ btnIzracunaj.addEventListener("click", (e) => {
 
     inputRadio.forEach(placanje => {
         if (placanje.id == "kartica" && rezultat > 2000) {
-            ispis2 += `<p>Cena bez popusta je ${rezultat} din.</p>`
-            ispis2 += `<p style="font-size:20px">Cena sa popustom je <strong>${0.9 * rezultat} din.</strong></p>`
+            ispis2 += `<p>Full price is ${rezultat} din.</p>`
+            ispis2 += `<p style="font-size:20px">Price with discount <strong>${0.9 * rezultat} din.</strong></p>`
         }
         else {
-            ispis2 += `<p>Cena bez popusta je ${rezultat} din.</p>`
+            ispis2 += `<p>Full price is ${rezultat} din.</p>`
         }
     });
     ispisDiv.innerHTML = ispis2;
