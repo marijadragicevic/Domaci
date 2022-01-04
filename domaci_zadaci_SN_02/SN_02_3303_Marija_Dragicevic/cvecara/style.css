@@ -247,3 +247,35 @@ header .container hgroup p{
 }
 
 /* CONTACT SECTION */
+.contact{
+    background-color: #eee;
+    margin-top: 20px;
+    color: #444;
+}
+.contact .container h3{
+    text-align: center;
+    font-size: 2rem;
+    padding: 30px 0px;
+}
+.contact .container div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact .container div article p{
+    padding: 10px 0;;
+    font-size: 1.3rem;
+}
+.contact .container div article p i{
+    color: rgb(38, 126, 226);
+    font-size: 1.5rem;
+}
+.contact .container div article h4{
+    font-size: 1.4rem;
+    padding: 10px 0;
+    text-align: center;
+}
+.contact .container div article iframe{
+    padding-bottom: 20px;
+}
