@@ -23,6 +23,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#order">Order</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -129,54 +130,64 @@
 
 
     <!-- DOMACI -->
-    <div class="container">
-        <form action="" id="forma">
-            <div class="div1">
-                <h3>Choose flowers:</h3>
-                <input type="number" name="cvece" id="ruze" placeholder="Cost per flower 150">
-                <label for="ruze">Rose</label><br>
+    <!-- ORDER SECTION -->
+    <section id="order" class="order">
+        <div class="container">
+            <form action="" id="forma">
+                <div class="div1">
+                    <h3>Choose flowers:</h3>
+                    <input type="number" name="cvece" id="ruze" placeholder="Cost per flower 150">
+                    <label for="ruze">Rose</label><br>
 
-                <input type="number" name="cvece" id="ljiljani" placeholder="Cost per flower 120">
-                <label for="ljiljani">Lily</label><br>
+                    <input type="number" name="cvece" id="ljiljani" placeholder="Cost per flower 120">
+                    <label for="ljiljani">Lily</label><br>
 
-                <input type="number" name="cvece" id="gerberi" placeholder="Cost per flower 70">
-                <label for="gerberi"> Gerber</label><br>
-            </div>
+                    <input type="number" name="cvece" id="gerberi" placeholder="Cost per flower 70">
+                    <label for="gerberi"> Gerber</label><br>
+                </div>
 
-            <div class="div1" id="lastDiv">
-                <h3>Additional gifts:</h3>
-                <input type="checkbox" name="Box of chocolates" id="poklon1">
-                <label for="poklon1">Box of chocolates</label><br>
+                <div class="div1">
+                    <h3>Additional gifts:</h3>
+                    <input type="checkbox" name="Box of chocolates" id="poklon1">
+                    <label for="poklon1">Box of chocolates</label><br>
 
-                <input type="checkbox" name="Chocolate" id="poklon2">
-                <label for="poklon2">Chocolate</label><br>
+                    <input type="checkbox" name="Chocolate" id="poklon2">
+                    <label for="poklon2">Chocolate</label><br>
 
-                <input type="checkbox" name="Champagne" id="poklon3">
-                <label for="poklon3">Champagne</label><br>
+                    <input type="checkbox" name="Champagne" id="poklon3">
+                    <label for="poklon3">Champagne</label><br>
 
-            </div>
+                </div>
 
-            <div class="div1">
-                <h3>Choose type of payment:</h3>
-                <input type="radio" name="placanje" id="Card">
-                <label for="kartica">Card</label><br>
+                <div class="div1">
+                    <h3>Choose type of payment:</h3>
+                    <input type="radio" name="placanje" id="Card">
+                    <label for="Card">Card</label><br>
 
-                <input type="radio" name="placanje" id="Cash">
-                <label for="kes">Cash</label><br>
+                    <input type="radio" name="placanje" id="Cash">
+                    <label for="Cash">Cash</label><br>
 
-            </div>
+                </div>
 
-            <input type="submit" value="Izracunaj">
-            <input type="reset" value="Resetuj">
-        </form>
+                <input type="submit" value="Izracunaj">
+                <input type="reset" value="Resetuj">
 
-        <div class="porudzbina">
-            <h2>This is your order:</h2>
-            <div class="ispis">
 
+            </form>
+
+            <div class="porudzbina">
+                <h3>This is your order:</h3>
+                <div class="ispis">
+                    <p>
+                        There are no orders
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!--  -->
+
 
     <script src="script1.js"></script>
 </body>

@@ -3,6 +3,13 @@
 let ispisDiv = document.querySelector(".ispis");
 let btnIzracunaj = document.querySelector("input[type='submit']");
 
+let btnReset = document.querySelector("input[type='reset']");
+btnReset.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.location.reload();
+
+});
+
 btnIzracunaj.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -45,13 +52,13 @@ btnIzracunaj.addEventListener("click", (e) => {
     rezultat += inputCheckbox.length * 500;
 
     inputCheckbox.forEach(poklon => {
-        ispis2 += ` + ${poklon.name} <br> `;
+        ispis2 += `<p class="poklon"> + ${poklon.name}</p> `;
     });
 
     inputRadio.forEach(placanje => {
-        if (placanje.id == "kartica" && rezultat > 2000) {
+        if (placanje.id == "Card" && rezultat > 2000) {
             ispis2 += `<p>Full price is ${rezultat} din.</p>`
-            ispis2 += `<p style="font-size:20px">Price with discount <strong>${0.9 * rezultat} din.</strong></p>`
+            ispis2 += `<p>Price with discount <strong>${0.9 * rezultat} din.</strong></p>`
         }
         else {
             ispis2 += `<p>Full price is ${rezultat} din.</p>`
