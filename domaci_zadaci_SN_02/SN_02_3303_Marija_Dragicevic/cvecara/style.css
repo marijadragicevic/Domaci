@@ -268,7 +268,7 @@ header .container hgroup p{
     font-size: 1.3rem;
 }
 .contact .container div article p i{
-    color: rgb(38, 126, 226);
+    color: rgb(100, 115, 245);
     font-size: 1.5rem;
 }
 .contact .container div article h4{
@@ -278,4 +278,16 @@ header .container hgroup p{
 }
 .contact .container div article iframe{
     padding-bottom: 20px;
+}
+
+
+ /* FOOTER SECTION */
+footer {
+    background-color: rgb(243, 189, 88);
+    padding:30px ;
+}
+footer p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
 }
