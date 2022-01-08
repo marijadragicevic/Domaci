@@ -50,7 +50,6 @@ function ispisPitanjaOdgovora(array) {
     let pitanja = document.createElement("div");
     let br = 0;
 
-    indexiPitanja = random(kviz);
     indexiPitanja.forEach(el => {
         let naslov = document.createElement("h4");
         let text1 = document.createTextNode(`${++br}. ${array[el].tekst}`);
@@ -121,9 +120,7 @@ btnSend.addEventListener("click", (e) => {
     });
 
     let allInput = document.querySelectorAll("input[type='radio']");
-    allInput.forEach(input => {
-        input.disabled = true;
-    });
+    allInput.forEach(input => { input.disabled = true; });
     btnSend.disabled = true;
 
 });
