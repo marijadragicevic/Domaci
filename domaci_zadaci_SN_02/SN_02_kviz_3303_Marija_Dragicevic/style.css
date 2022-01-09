@@ -218,3 +218,35 @@ header .container hgroup p{
 .quiz .container .ispisO p {
    font-size: 1.3rem;
 } 
+
+/* CONTACT SECTION */
+.contact{
+    padding: 30px 0px;
+}
+.contact .container h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 15px;
+    color: purple;
+    font-weight: 500;
+}
+.contact .container .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact .container .row article p{
+    font-size: 1.4rem;
+    padding: 10px 0px;
+    color: #444;
+}
+.contact .container .row article p i {
+    color: rgb(151, 0, 151);
+    font-size: 1.5rem;
+}
+.contact .container .row article h4{
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    counter:#444;
+}
