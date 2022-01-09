@@ -122,6 +122,7 @@ btnSend.addEventListener("click", (e) => {
     let allInput = document.querySelectorAll("input[type='radio']");
     allInput.forEach(input => { input.disabled = true; });
     btnSend.disabled = true;
+    btnSend.style.backgroundColor = "grey";
 
 });
 
