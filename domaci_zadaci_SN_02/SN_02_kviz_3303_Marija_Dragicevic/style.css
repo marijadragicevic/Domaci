@@ -35,6 +35,9 @@ button:hover{
     background-color: rgb(26, 214, 36);
     color: white;
 }
+p {
+    line-height: 1.6;
+}
 
 /* HEADER SECTION */
 
@@ -68,7 +71,7 @@ header .container nav ul li a{
     padding: 10px 15px;
     font-size: 1.3rem;
     font-weight: 500;
-    box-shadow: 10px 10px 10px white;
+    box-shadow: 0px 0px 10px white;
     color:purple;
     background-color: white;
     border-radius: 3px;
@@ -91,7 +94,7 @@ header .container hgroup h2{
     font-size: 3rem;
     text-align: center;
     color: rgb(77, 8, 77);
-    text-shadow: 10px 10px 20px white;
+    text-shadow: 0px 0px 10px white;
     font-weight: 600;
 }
 header .container hgroup p{
@@ -99,4 +102,55 @@ header .container hgroup p{
     text-align: center;
     color: rgb(83, 0, 83);
     text-shadow: 10px 10px 20px white;
+}
+
+/* UPUTSTVA SECTION */
+.uputstva {
+    margin-top: 30px;
+    background-color:#eee;
+} 
+.uputstva .container hgroup h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0px 10px;
+    color: purple;
+    font-weight: 500;
+}
+.uputstva .container hgroup p{
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    color: #444;
+    font-weight: 400;
+    text-align:left;
+}
+.uputstva .container .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+.uputstva .container .row article{
+    padding: 15px;
+    background-color:white;
+    border-radius: 15px;
+    text-align: center;
+    color: #444;
+    font-weight: 500;
+}
+.uputstva .container .row article:hover{
+    box-shadow: 0px 0px 20px purple ;
+}
+.uputstva .container .row article h3{
+    font-size: 1.5rem;
+    padding-bottom:10px ;
+    color: purple;
+    font-weight: 500;
+}
+.uputstva .container .row article img {
+    border-radius: 10px;
+}
+.uputstva .container .row article p {
+    font-size: 1.2rem;
+    padding-top: 10px;
 }
