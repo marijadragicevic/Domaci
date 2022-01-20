@@ -1,0 +1,39 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+body{
+    padding: 10px;
+    margin:10px;
+}
+
+.tabela1 img{
+    display: inline-block;
+    width: 100%;
+    height: 45vh;
+}
+
+.tabela1 tr td,th {
+    padding: 15px 5px;
+}
+
+.tabela2{
+    margin: 0 30%;
+}
+
+.tabela2 img{
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+   
+}
+
+.tabela2 h3{
+    text-align: center;
+}
+
+.tabela2 span{
+    font-weight: 700;
+} 
